@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="assets\css/bootstrap.css">
+        <link rel="stylesheet" href="assets\css/bootstrap-grid.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets\css/style.css">
+        <title>İletisim</title>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000; max-height: 90px" >
+           
+    
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" style="font-style: italic; font-size: 25px" style="color: white"><strong>\tKayahan Şanlı</strong></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="leftsidebar" onclick="toggleleftsidebar()">
+                    <ul>
+                        <li><a href="hakkında.html" href="#"><strong>Hakkında</strong></a></li>
+                        <li><a href="özgeçmiş.html" href="#">Özgeçmişim</a></li>
+                        <li><a href="şehrim.html" href="#">Şehrim</a></li>
+                        <li><a href="miras.html"href="#">Mirasımız</a></li>
+                        <li><a href="iletişim.html" href="#">İletişim</a></li>
+                    </ul>
+                    <div class = "menuButton"></div>
+                  </div>
+               
+            </nav>
+            
+            <div class="collapse navbar-collapse"  >             
+                <ul class="navbar-nav ml-auto">
+                </ul>
+                <div >           
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search"  >
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ara</button>
+                    </form>
+                </div>                
+            </div>
+          
+       </nav>
+        <!-- resim-form elemanlar -->
+<div class="container mt-5">
+    <div class="text-justify">
+        <div class="row wow rotateInDownLeft">
+            <div class="col align-self-center"style="position:static;">
+            <img src="assets/iletisim.jpg" alt="resim"style="margin-left: -90px;">
+            </div>
+        </div>
+        <div class="row wow rotateInDownRight">
+            <div class="col" style="margin-top: 25px;margin-left: 100px;"style>
+                <h3>İletişim Bilgileri:</h3><br>
+                <input type="text" name="ad" placeholder="Adınız" size="100px"><br><br>
+                <input type="text" name="soyad" placeholder="Soyadınız" size="100px"><br><br>
+                <input type="text"  name="e-posta" placeholder="Email adresi"  size="100px"><br><br>
+                <input type="text" name="adres" placeholder="Adresiniz" size="100px"><br><br>
+                <h6>Cinsiyetiniz:</h6>
+                <input type="radio" name="cinsiyet" id="cinsiyet1"><label for="cinsiyet1">Erkek</label>
+                <input type="radio" name="cinsiyet" id="cinsiyet2"><label for="cinsiyet2">Kadın</label><br><br>
+                <textarea name="yazialani" cols="100" rows="10" placeholder="İletmek istediğiniz mesaj"></textarea><br><br>
+                <button type="submit" name="gonder">Gönder</button>&nbsp;&nbsp;
+                <button type="submit" name="temizle">Temizle</button>
+
+
+            </div>
+        </div>
+</div>
+        <script src="main.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+      <script>
+       new WOW().init();
+     </script>
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-45901861-2', 'auto');
+       ga('send', 'pageview');
+
+     </script>
+        
+        
+        
+    </body>
+</html>
